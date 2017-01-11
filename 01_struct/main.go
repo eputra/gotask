@@ -12,14 +12,13 @@ type Pokemon struct {
 }
 
 func main() {
-	var pikachu Pokemon
-
-	pikachu = Pokemon{}
-	pikachu.Name = "Pikachu"
-	pikachu.HP = 35
-	pikachu.Attack = 55
-	pikachu.Defense = 40
-	pikachu.Speed = 90
+	pikachu := Pokemon{
+		Name:    "Pikachu",
+		HP:      35,
+		Attack:  55,
+		Defense: 40,
+		Speed:   90,
+	}
 
 	fmt.Printf("%s Default\n", pikachu.Name)
 	pikachu.Ability()
