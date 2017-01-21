@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/eputra/gotask/gtslice"
 	"github.com/eputra/gotask/gtstruct"
 )
 
@@ -15,6 +16,8 @@ func main() {
 		switch os.Args[1] {
 		case "struct":
 			gtstruct.Print()
+		case "slice":
+			gtslice.Print()
 		default:
 			fmt.Println("Task not found")
 		}
